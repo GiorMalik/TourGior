@@ -3,14 +3,14 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/images/data';
+import { ImageGalleryData } from '@/images/gallery';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/locales';
 
 export function HeroSection() {
   const { t } = useTranslation();
-  const heroImages = PlaceHolderImages.filter((p) =>
+  const heroImages = ImageGalleryData.filter((p) =>
     p.id.startsWith('hero-bali-')
   );
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

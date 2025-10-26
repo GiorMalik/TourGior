@@ -1,70 +1,90 @@
-{
-  "placeholderImages": [
+
+import { StaticImageData } from 'next/image';
+
+import barongStatue from '../../public/images/barong-statue.jpg';
+import nusaPenidaBeach from '../../public/images/nusa-penida-beach.jpg';
+import kedongananSunset from '../../public/images/kedonganan-sunset.jpg';
+import avanza from '../../public/images/avanza.png';
+import xpander from '../../public/images/xpander.png';
+import allNewAvanza from '../../public/images/all-new-avanza.png';
+import innovaReborn from '../../public/images/innova-reborn.webp';
+import hiaceCommuter from '../../public/images/hiace-commuter.png';
+import hiacePremio from '../../public/images/hiace-premio.png';
+import toyotaAlphard from '../../public/images/toyota-alphard.png.webp';
+import toyotaVellfire from '../../public/images/toyota-vellfire.png';
+
+export type ImageGallery = {
+  id: string;
+  description: string;
+  imageUrl: StaticImageData;
+  imageHint: string;
+};
+
+export const ImageGalleryData: ImageGallery[] = [
     {
       "id": "hero-bali-1",
       "description": "Patung Barong",
-      "imageUrl": "/images/barong-statue.jpg",
+      "imageUrl": barongStatue,
       "imageHint": "barong statue"
     },
     {
       "id": "hero-bali-2",
       "description": "Pantai Nusa Penida",
-      "imageUrl": "/images/nusa-penida-beach.jpg",
+      "imageUrl": nusaPenidaBeach,
       "imageHint": "nusa penida beach"
     },
     {
       "id": "hero-bali-3",
       "description": "Sunset Kedonganan",
-      "imageUrl": "/images/kedonganan-sunset.jpg",
+      "imageUrl": kedongananSunset,
       "imageHint": "kedonganan sunset"
     },
     {
       "id": "avanza-car",
       "description": "A large van for groups",
-      "imageUrl": "/images/avanza.png",
+      "imageUrl": avanza,
       "imageHint": "van car"
     },
     {
       "id": "xpander-car",
       "description": "The Mitsubishi Xpander",
-      "imageUrl": "/images/xpander.png",
+      "imageUrl": xpander,
       "imageHint": "Mitsubishi Xpander"
     },
     {
       "id": "all-new-avanza",
       "description": "The All New Avanza",
-      "imageUrl": "/images/all-new-avanza.png",
+      "imageUrl": allNewAvanza,
       "imageHint": "all new avanza"
     },
     {
       "id": "innova-reborn",
       "description": "The Toyota Innova Reborn",
-      "imageUrl": "/images/innova-reborn.webp",
+      "imageUrl": innovaReborn,
       "imageHint": "Toyota Innova Reborn"
     },
     {
       "id": "hiace-commuter",
       "description": "The Toyota Hiace Commuter",
-      "imageUrl": "/images/hiace-commuter.png",
+      "imageUrl": hiaceCommuter,
       "imageHint": "Toyota Hiace Commuter"
     },
     {
       "id": "hiace-premio",
       "description": "The Toyota Hiace Premio",
-      "imageUrl": "/images/hiace-premio.png",
+      "imageUrl": hiacePremio,
       "imageHint": "Toyota Hiace Premio"
     },
     {
       "id": "toyota-alphard",
       "description": "The Toyota Alphard",
-      "imageUrl": "/images/toyota-alphard.png.webp",
+      "imageUrl": toyotaAlphard,
       "imageHint": "The Toyota Alphard"
     },
     {
       "id": "toyota-vellfire",
       "description": "The Toyota Vellfire",
-      "imageUrl": "/images/toyota-vellfire.png",
+      "imageUrl": toyotaVellfire,
       "imageHint": "The Toyota Vellfire"
     }
   ]
-}

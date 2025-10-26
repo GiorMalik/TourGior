@@ -15,7 +15,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import type { Car, CarFeature, CarType } from '@/lib/types';
-import { PlaceHolderImages } from '@/images/data';
+import { ImageGalleryData } from '@/images/gallery';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useTranslation, type TranslationKeys } from '@/lib/locales';
 
@@ -69,7 +69,7 @@ export function CarCard({ car }: CarCardProps) {
     setRating(randomRating);
   }, []);
 
-  const carImage = PlaceHolderImages.find((p) => p.id === car.imageId);
+  const carImage = ImageGalleryData.find((p) => p.id === car.imageId);
   const message = encodeURIComponent(
     `Hello, I would like to book the ${car.name} car.`
   );
