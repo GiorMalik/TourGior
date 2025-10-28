@@ -95,7 +95,7 @@ export function CarCard({ car }: CarCardProps) {
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
       <CardHeader className="p-0">
-        <div className="relative h-48 w-full bg-white">
+        <div className="relative h-48 w-full bg-secondary p-4">
           {carImage ? (
             <Image
               src={carImage.imageUrl}
