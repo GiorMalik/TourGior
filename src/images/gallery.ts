@@ -16,7 +16,9 @@ import toyotaVellfire from '../../public/images/toyota-vellfire.png';
 export type ImageGallery = {
   id: string;
   description: string;
-  imageUrl: StaticImageData;
+  imageUrl: {
+    src: string;
+  };
   imageHint: string;
 };
 

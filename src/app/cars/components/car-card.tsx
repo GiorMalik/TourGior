@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import type { Car, CarFeature, CarType } from '@/lib/types';
+import type { Car } from '@/cars/types';
 import { ImageGalleryData } from '@/images/gallery';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useTranslation, type TranslationKeys } from '@/lib/locales';
@@ -63,7 +63,6 @@ export function CarCard({ car }: CarCardProps) {
 
   useEffect(() => {
     setIsMounted(true);
-    // Generate random review count and rating on the client side
     setReviewCount(Math.floor(Math.random() * (400 - 200 + 1)) + 200);
     const randomRating = Math.round((Math.random() * (5.0 - 4.5) + 4.5) * 10) / 10;
     setRating(randomRating);
@@ -99,10 +98,10 @@ export function CarCard({ car }: CarCardProps) {
         <div className="relative h-48 w-full">
           {carImage ? (
             <Image
-              src={carImage.imageUrl}
+              src={carImage.imageUrl.src}
               alt={car.name}
               fill
-              className="object-cover"
+              className="object-contain"
               data-ai-hint={carImage.imageHint}
             />
           ) : (

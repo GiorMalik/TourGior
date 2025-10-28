@@ -38,7 +38,7 @@ export function HeroSection() {
       {heroImages.map((image, index) => (
         <Image
           key={image.id}
-          src={image.imageUrl}
+          src={image.imageUrl.src}
           alt={image.description}
           fill
           className={cn(
