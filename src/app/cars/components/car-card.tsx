@@ -101,7 +101,7 @@ export function CarCard({ car }: CarCardProps) {
               src={carImage.imageUrl.src}
               alt={car.name}
               fill
-              className="object-contain"
+              className="object-cover"
               data-ai-hint={carImage.imageHint}
             />
           ) : (
