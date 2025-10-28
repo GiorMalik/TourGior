@@ -14,7 +14,6 @@ const translations = {
     aboutUsDesc: 'We provide professional car rental services with experienced drivers in Bali. Your comfort and safety is our priority. We offer a wide range of vehicles to suit your needs, from city tours to airport transfers.',
     allRightsReserved: 'All rights reserved.',
     availableCars: 'Available Cars',
-    // Car details
     sedan: 'Sedan',
     suv: 'SUV',
     van: 'Van',
@@ -39,7 +38,6 @@ const translations = {
     aboutUsDesc: 'Kami menyediakan layanan rental mobil profesional dengan sopir berpengalaman di Bali. Kenyamanan dan keamanan Anda adalah prioritas kami. Kami menawarkan berbagai macam kendaraan untuk memenuhi kebutuhan Anda, dari tur kota hingga antar-jemput bandara.',
     allRightsReserved: 'Hak cipta dilindungi undang-undang.',
     availableCars: 'Mobil yang Tersedia',
-    // Car details
     sedan: 'Sedan',
     suv: 'SUV',
     van: 'Van',
@@ -64,7 +62,6 @@ const translations = {
     aboutUsDesc: '我们在巴厘岛提供带经验丰富的司机的专业汽车租赁服务。您的舒适和安全是我们的首要任务。我们提供多种车辆以满足您的需求，从城市旅游到机场接送。',
     allRightsReserved: '版权所有。',
     availableCars: '可用车辆',
-    // Car details
     sedan: '轿车',
     suv: '越野车',
     van: '面包车',
@@ -89,7 +86,6 @@ const translations = {
     aboutUsDesc: '발리에서 숙련된 운전기사와 함께 전문 렌터카 서비스를 제공합니다. 고객님의 편안함과 안전이 최우선입니다. 시내 관광부터 공항 환승까지 고객님의 필요에 맞는 다양한 차량을 제공합니다.',
     allRightsReserved: '모든 권리 보유.',
     availableCars: '이용 가능한 차량',
-    // Car details
     sedan: '세단',
     suv: 'SUV',
     van: '밴',
@@ -114,7 +110,6 @@ const translations = {
     aboutUsDesc: 'Nous fournissons des services de location de voitures professionnels avec des chauffeurs expérimentés à Bali. Votre confort et votre sécurité sont notre priorité. Nous proposons une large gamme de véhicules pour répondre à vos besoins, des visites de la ville aux transferts aéroport.',
     allRightsReserved: 'Tous droits réservés.',
     availableCars: 'Voitures disponibles',
-    // Car details
     sedan: 'Berline',
     suv: 'SUV',
     van: 'Van',

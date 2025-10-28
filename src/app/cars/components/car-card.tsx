@@ -14,11 +14,10 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import type { Car } from '@/cars/types';
+import type { Car, CarFeature, CarType } from '@/lib/types';
 import { ImageGalleryData } from '@/images/gallery';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useTranslation, type TranslationKeys } from '@/lib/locales';
-import { cn } from '@/lib/utils';
 
 interface CarCardProps {
   car: Car;
@@ -92,22 +91,17 @@ export function CarCard({ car }: CarCardProps) {
   const translatedFeatures = car.features.map(feature => t(toCamelCase(feature))).join(', ');
   const carTypeKey = toCamelCase(car.type);
 
-  const imageStyle =
-    car.name === 'Xpander' || car.name === 'All New Avanza'
-      ? 'object-cover'
-      : 'object-contain';
-
 
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
       <CardHeader className="p-0">
-        <div className="relative h-48 w-full bg-secondary p-4">
+        <div className="relative h-48 w-full">
           {carImage ? (
             <Image
-              src={carImage.imageUrl.src}
+              src={carImage.imageUrl}
               alt={car.name}
               fill
-              className={cn(imageStyle)}
+              className="object-contain"
               data-ai-hint={carImage.imageHint}
             />
           ) : (

@@ -70,7 +70,7 @@ export function HeroSection() {
             size="lg"
             variant="outline"
             className="border-primary-foreground/50 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
-            onClick={() => handleScrollto('about-us')}
+            onClick={() => handleScrollTo('about-us')}
           >
             {t('aboutUs')}
           </Button>
